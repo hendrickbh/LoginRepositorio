@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="369dp"
+            android:layout_height="295dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="40dp"
+            app:srcCompat="@drawable/s"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="107dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txt_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="15"
+        android:hint="Nombre Completo"
+
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="279dp" />
+
+    <EditText
+        android:id="@+id/txt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="331dp"
+        android:textSize="24sp"
+        android:hint="Password"
+        android:layout_marginBottom="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="150dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="20dp"
+            android:onClick="Validar"
+            android:text="entrar"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="446dp" />
+
+        <Button
+            android:id="@+id/Limpiar"
+            android:layout_width="150dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="70dp"
+            android:onClick="Validar"
+            android:text="limpiar"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="215dp"
+            tools:layout_editor_absoluteY="446dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
